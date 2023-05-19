@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibon Songi - Home</title>
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <section class="top_header_bar">
+
+        <div class="top_bar_top">
+            <div class="top_bar_top_holder_block">
+            </div>
+            <div class="container">
+                <div class="top_bar_top_inner">
+                    <div class="top_bar_top_inner_left d-flex align-items-center">
+                        <div class="top_bar_top_inner_left_one d-flex align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>00000000000</p>
+                        </div>
+                        <div class="top_bar_top_inner_left_two d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="location_details">
+                                <p>Kolkata, West Bengal - 000000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_bar_top_inner_right d-flex align-items-center justify-content-end">
+                        <p>Find Us On:</p>
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <%= existingUser.firstName %> -->
+        <div class="login_register_section">
+            <div class="container">
+                <div class="login_register_block">
+                    <ul>
+                        <li><img src="assets/image/user2.png"></li>
+                        <li><%= existingUser.firstName %> <%=existingUser.lastName %></li>
+                        <li><span>|</span><a href="/logout"> LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_navbar_block">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> <img src="assets/image/logo.png" class="img-fluid"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav custom_navbar_nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index
+">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="active_members
+">ACTIVE MEMBERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="premium_plans
+">PREMIUM PLANS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HAPPY STORIES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact
+">CONTACT US</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown menu_last_item">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="sa-bg-spc">
+        <section class="sa_setion_prof_det position-relative">
+            <div class="container">
+                <div class="sa_profile_details text-center">
+                    <a class="active" href="javascript:void(0)"><i class="fa fa-user"></i> Profile</a>
+                    <a href="javascript:void(0)"><i class="fa fa-heart"></i> My Interests</a>
+                    <a href="javascript:void(0)"><i class="fa fa-bars"></i> Shortlist</a>
+                    <a href="javascript:void(0)"><i class="fa fa-star"></i> Followed Users</a>
+                    <a href="javascript:void(0)"><i class="fa fa-message"></i> Message</a>
+                    <a href="javascript:void(0)"><i class="fa fa-ban"></i> Ignored List</a>
+                </div>
+            </div>
+        </section>
+        <section class="profile_details_page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="box-container">
+                            <div class="box">
+                                <a href="javascript:void(0)" onclick="document.getElementById('prof-img-up').click()" class="settings"><i class="fa fa-camera"></i></a>
+                                <input type="file" style="display: none;" id="prof-img-up">
+                                <div class="img-container">
+                                    <img src="assets/image/p1.jpg" alt="">
+                                </div>
+                                <h3 class="name"><%= existingUser.firstName %> <%=existingUser.lastName %></h3>
+                                <P><%= existingUser.occupation %>, <%= existingUser.state %></P>
+                                
+                                <h6 class="follow">FOLLOWER: 2K</h6>
+                                <div class="table-container">
+                                    <h5 class="head">PACKAGE INFORMATIONS</h5>
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <th>CURRENT PACKAGE</th>
+                                            <td>FREE</td>
+                                        </tr>
+                                        <tr>
+                                            <th>PACKAGE PRICE</th>
+                                            <td>₹0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>PAYMENT GATEWAY</th>
+                                            <td>NONE</td>
+                                        </tr>
+                                        <tr>
+                                            <th>REMAINING INTEREST</th>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <th>REMAINING MESSAGE</th>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th>PHOTO GALLERY</th>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                    <a href="javascript:void(0)"><button class="btn button"><i class="fa fa-lock"></i> Close Account</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="right box-container">
+                            <div class="box">
+                                <div class="right-tab d-flex justify-content-between mb-2">
+                                    <p>Profile Information</p>
+                                    <a href="edit_profile
+" class="main-edit"><i class="fa fa-pen-to-square"></i> Edit All</a>
+                                </div>
+                                <hr>
+                                <p class="memberid">Member ID -&nbsp;<span>F84ED2A4867</span></p>
+
+                                <div class="tabpage">
+                                    <div class="table-container right firstshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Introduction</p>
+                                            <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                        </div>
+                                        <p><%= existingUser.introduction %></p>
+                                    </div>
+
+                                    <div class="table-container right firstshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Basic Information</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>FIRST NAME</th>
+                                                <td><%= existingUser.firstName %></td>
+                                                <th>LAST NAME</th>
+                                                <td><%= existingUser.lastName %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>GENDER</th>
+                                                <td><%= existingUser.gender %></td>
+                                                <th>EMAIL</th>
+                                                <td><%= existingUser.email %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>AGE</th>
+                                                <td><%= existingUser.age %></td>
+                                                <th>MARITAL STATUS</th>
+                                                <td><%= existingUser.maritalStatus %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>NUMBER OF CHILD</th>
+                                                <td><%= existingUser.children %></td>
+                                                <th>AREA</th>
+                                                <td><%= existingUser.area %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>ON BEHALF</th>
+                                                <td><%= existingUser.onBehalf %></td>
+                                                <th>MOBILE</th>
+                                                <td><%= existingUser.mobile %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>DATE OF BIRTH</th>
+                                                <td><%= existingUser.dob %></td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right firstshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Present Address</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>COUNTRY</th>
+                                                <td><%= existingUser.country %></td>
+                                                <th><%= existingUser.state %></th>
+                                                <td><%= existingUser.state %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>CITY</th>
+                                                <td><%= existingUser.city %></td>
+                                                <th>POSTAL CODE</th>
+                                                <td><%= existingUser.postalCode %></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    <div class="table-container right firstshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Permanent Address</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>COUNTRY</th>
+                                                <td><%= existingUser.country1 %></td>
+                                                <th>STATE</th>
+                                                <td><%= existingUser.state1 %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>CITY</th>
+                                                <td><%= existingUser.city1 %></td>
+                                                <th>POSTAL CODE</th>
+                                                <td><%= existingUser.postalCode1 %></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right firstshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Education And Career</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>HIGHEST EDUCATION</th>
+                                                <td><%= existingUser.highestEducation %></td>
+                                                <th>OCCUPATION</th>
+                                                <td><%= existingUser.occupation %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>ANNUAL INCOME</th>
+                                                <td></td>
+                                                <th><%= existingUser.annualIncome %></th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right firstshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Physical Attributes</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>HEIGHT</th>
+                                                <td><%= existingUser.height %></td>
+                                                <th>WEIGHT</th>
+                                                <td><%= existingUser.weight %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>EYE COLOR</th>
+                                                <td><%= existingUser.eyeColor %></td>
+                                                <th>HAIR COLOR</th>
+                                                <td><%= existingUser.hairColor %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>COMPLEXION</th>
+                                                <td><%= existingUser.complextion %></td>
+                                                <th>BLOOD GROUP</th>
+                                                <td><%= existingUser.bloodGroup %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>BODY TYPE</th>
+                                                <td><%= existingUser.bodyType %></td>
+                                                <th>BODY ART</th>
+                                                <td><%= existingUser.bodyArt %></td>
+                                            </tr>
+                                            <tr>
+                                                <th>ANY DISABILITY</th>
+                                                <td></td>
+                                                <th><%= existingUser.anyDisability %></th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="tabpage">
+                                    <div class="table-container right secondshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Language</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>MOTHER TONGUE</th>
+                                                <td>BENGALI</td>
+                                                <th>LANGUAGE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>SPEAK</th>
+                                                <td></td>
+                                                <th>READ</th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right secondshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Hobbies And Interests</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>HOBBY</th>
+                                                <td></td>
+                                                <th>INTEREST</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>MUSIC</th>
+                                                <td></td>
+                                                <th>BOOKS</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>MOVIE</th>
+                                                <td></td>
+                                                <th>TV SHOW</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>SPORTS SHOW</th>
+                                                <td></td>
+                                                <th>FITNESS ACTIVITY</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>CUISINE</th>
+                                                <td></td>
+                                                <th>DRESS STYLE</th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right secondshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Personal Attitude And Behavior</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>AFFECTION</th>
+                                                <td></td>
+                                                <th>HUMOR</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>POLITICAL VIEW</th>
+                                                <td></td>
+                                                <th>RELIGIOUS SERVICE</th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right secondshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Residency Information</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>BIRTH COUNTRY</th>
+                                                <td></td>
+                                                <th>RESIDENCY COUNTRY</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>CITIZENSHIP COUNTRY</th>
+                                                <td></td>
+                                                <th>GROW UP COUNTRY</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>IMMIGRATION STATUS</th>
+                                                <td></td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="tabpage">
+                                    <div class="table-container right thirdshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Spiritual And Social Background</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>RELIGION</th>
+                                                <td></td>
+                                                <th>CASTE / SECT</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>SUB-CASTE</th>
+                                                <td></td>
+                                                <th>ETHNICITY</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>PERSONAL VALUE</th>
+                                                <td></td>
+                                                <th>FAMILY VALUE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>COMMUNITY VALUE</th>
+                                                <td></td>
+                                                <th>FAMILY STATUS</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>MANGLIK</th>
+                                                <td></td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right thirdshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Life Style</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>DIET</th>
+                                                <td></td>
+                                                <th>DRINK</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>SMOKE</th>
+                                                <td></td>
+                                                <th>LIVING WITH</th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right thirdshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Astronomic Information</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>SUN SIGN</th>
+                                                <td></td>
+                                                <th>MOON SIGN</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>CITY OF BIRTH</th>
+                                                <td></td>
+                                                <th>TIME OF BIRTH</th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right thirdshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Family Information</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>FATHER</th>
+                                                <td></td>
+                                                <th>MOTHER</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>BROTHER / SISTER</th>
+                                                <td></td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="tabpage">
+                                    <div class="table-container right fourthshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Additional Personal Details</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>HOME DISTRICT</th>
+                                                <td></td>
+                                                <th>FAMILY RESIDENCE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>FATHER'S OCCUPATION</th>
+                                                <td></td>
+                                                <th>SPECIAL CIRCUMSTANCES</th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    
+                                    <div class="table-container right fourthshow">
+                                        <div class="right-tab d-flex justify-content-between mb-2">
+                                            <p>Partner Expectation</p>
+                                            <div>
+                                                <a href="javascript:void(0)" class="show"><i class="fa fa-unlock"></i>Show</a>
+                                                <a href="javascript:void(0)" class="hide"><i class="fa fa-lock"></i>Hide</a>
+                                                <a href="javascript:void(0)" class="edit"><i class="fa fa-pen-to-square"></i></a>
+                                            </div>
+                                        </div>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>GENERAL REQUIREMENT</th>
+                                                <td></td>
+                                                <th>AGE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>HEIGHT</th>
+                                                <td></td>
+                                                <th>WEIGHT</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>MARITAL STATUS</th>
+                                                <td></td>
+                                                <th>WITH CHILDREN ACCEPTABLES</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>COUNTRY OF RESIDENCE</th>
+                                                <td></td>
+                                                <th>RELIGION</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>CASTE / SECT</th>
+                                                <td></td>
+                                                <th>SUB CASTE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>EDUCATION</th>
+                                                <td></td>
+                                                <th>PROFESSION</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>DRINKING HABITS</th>
+                                                <td></td>
+                                                <th>SMOKING HABITS</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>DIET</th>
+                                                <td></td>
+                                                <th>BODY TYPE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>PERSONAL VALUE</th>
+                                                <td></td>
+                                                <th>MANGLIK</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>ANY DISABILITY</th>
+                                                <td></td>
+                                                <th>MOTHER TONGUE</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>FAMILY VALUE</th>
+                                                <td></td>
+                                                <th>PREFERED COUNTRY</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>PREFERED STATE</th>
+                                                <td></td>
+                                                <th>PREFERED STATUS</th>
+                                                <td></td>
+                                            </tr>
+                                            </tr>
+                                            <tr>
+                                                <th>COMPLEXION</th>
+                                                <td></td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="btn-container d-flex justify-content-between">
+                                    <button class="btn button" id="prev">Previous</button>
+                                    <button class="btn button" id="next">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="footer_block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer_block_left">
+                            <h1>JIBON SONGI</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos asperiores voluptatum inventore commodi incidunt non optio saepe, exercitationem molestiae culpa, esse fugiat ducimus corrupti amet quisquam, sapiente aliquid adipisci omnis!</p>
+                            <div class="icons">
+                                <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="footer_block_right">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>ABOUT</h5>
+                                    <ul>
+                                        <li>All Members</li>
+                                        <li>Premium Members</li>
+                                        <li>Free Members</li>
+                                        <li>Happy Stories</li>
+                                        <li>Premium Plans</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>QUICK SEARCH</h5>
+                                    <ul>
+                                        <li>All Members</li>
+                                        <li>Premium Members</li>
+                                        <li>Free Members</li>
+                                        <li>Happy Stories</li>
+                                        <li>Premium Plans</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>USEFUL LINKS</h5>
+                                    <ul>
+                                        <li>FAQ</li>
+                                        <li>Terms & Conditions</li>
+                                        <li>Privacy Policy</li>
+                                    </ul>
+                                    <div class="box">
+                                        <h6>Download Our App</h6>
+                                        <a href="javascript:void(0)"><img src="assets/image/apple.png" alt=""></a>
+                                        <a href="javascript:void(0)"><img src="assets/image/google.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: #fff;">
+            <div class="container">
+                <div class="text-center">
+                    <p style="color: #ffffff; font-weight: 300;">Copyright &copy; 2023 Assam matrimonial - All Rights Reserved</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/my-carousel.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".right.box-container .tabpage").each(function(e) {
+                if (e != 0) $(this).hide();
+            });
+        
+            $("#next").click(function(){
+                if ($(".right.box-container .tabpage:visible").next().length != 0)
+                    $(".right.box-container .tabpage:visible").next().show().prev().hide();
+                else {
+                    $(".right.box-container .tabpage:visible").hide();
+                    $(".right.box-container .tabpage:first").show();
+                }
+                return false;
+            });
+        
+            $("#prev").click(function(){
+                if ($(".right.box-container .tabpage:visible").prev().length != 0)
+                    $(".right.box-container .tabpage:visible").prev().show().next().hide();
+                else {
+                    $(".right.box-container .tabpage:visible").hide();
+                    $(".right.box-container .tabpage:last").show();
+                }
+                return false;
+            });
+        });
+    </script>
+
+</body>

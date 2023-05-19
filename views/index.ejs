@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibon Songi - Home</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <section class="top_header_bar">
+
+        <div class="top_bar_top">
+            <div class="top_bar_top_holder_block">
+            </div>
+            <div class="container">
+                <div class="top_bar_top_inner">
+                    <div class="top_bar_top_inner_left d-flex align-items-center">
+                        <div class="top_bar_top_inner_left_one d-flex align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>00000000000</p>
+                        </div>
+                        <div class="top_bar_top_inner_left_two d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="location_details">
+                                <p>Kolkata, West Bengal - 000000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_bar_top_inner_right d-flex align-items-center justify-content-end">
+                        <p>Find Us On:</p>
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="login_register_section">
+            <div class="container">
+                <div class="login_register_block">
+                    <ul>
+                        <li><a href="login
+" target="_blank">LOGIN <span>|</span></a></li>
+                        <li><a href="javascript:void(0)" target="_blank">SIGN UP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_navbar_block">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> <img src="assets/image/logo.png" class="img-fluid"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav custom_navbar_nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="active_members">ACTIVE MEMBERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="premium_plans">PREMIUM PLANS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HAPPY STORIES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact">CONTACT US</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown menu_last_item">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li> -->
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+
+    </section>
+
+    <section class="banner_setion position-relative">
+        <img src="assets/image/banner.png" class="img-fluid">
+        <div class="banner_setion_inner">
+            <div class="container">
+                <div class="banner_setion_inner_block">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="banner_setion_inner_block_text">
+                                <h1>Create your profile for <span>FREE</span></h1>
+                                <div class="form_block">
+                                    <form action="/userRegister" method="POST" id="homeregistrationForm">
+                                        <div class="number_block mb-3">
+                                            <div class="number_block_one">
+                                                <div class="form-outline">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label form_label9">I'M LOOKING FOR A</label>
+                                                    <select class="form-select custom_select_box"
+                                                        aria-label="Default select example" id="lookingfor"
+                                                        name="lookingfor">
+                                                        <option value="" selected="">Choose one</option>
+                                                        <option value="female">Female</option>
+                                                        <option value="male">Male</option>
+                                                    </select>
+                                                    <span class="control-label validation_from_error"
+                                                        id="lookingfor_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="number_block_two">
+                                                <div class="form-outline">
+                                                    <label for="exampleInputPassword1" class="form-label form_label9">ON
+                                                        BEHALF</label>
+                                                    <select class="form-select custom_select_box"
+                                                        aria-label="Default select example" id="onbehalf"
+                                                        name="onbehalf">
+                                                        <option value="" selected="">Choose one</option>
+                                                        <option value="Self"> Self</option>
+                                                        <option value="Daughter/Son"> Daughter/Son</option>
+                                                        <option value="Sister"> Sister</option>
+                                                        <option value="Brother"> Brother</option>
+                                                        <option value="Friend"> Friend</option>
+                                                    </select>
+                                                    <span class="control-label validation_from_error"
+                                                        id="onbehalf_error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="number_block mb-3">
+                                            <div class="number_block_one">
+                                                <div class="form-outline">
+                                                    <label class="form-label form_label9" for="typeNumber">AGED
+                                                        FROM</label>
+                                                    <input type="number" id="typeNumber"
+                                                        class="form-control custom_select_box" name="ageform" value="">
+                                                    <span class="control-label" id="ageform_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="number_block_two">
+                                                <div class="form-outline">
+                                                    <label class="form-label form_label9" for="typeNumber">TO</label>
+                                                    <input type="number" id="typeNumber"
+                                                        class="form-control custom_select_box" name="ageto" value="">
+                                                    <span class="control-label" id="ageto_error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="number_block mb-3">
+                                            <div class="number_block_one">
+                                                <div class="form-outline">
+                                                    <label for="profileownername" class="form-label form_label9">Profile
+                                                        Name</label>
+                                                    <input type="text" class="form-control custom_select_box"
+                                                        id="profileownername" name="profile_name" value="">
+                                                    <span class="control-label" id="ageto_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="number_block_two">
+                                                <div class="form-outline">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label form_label9">HIS/HER AGE</label>
+                                                    <select class="form-select custom_select_box"
+                                                        aria-label="Default select example" id="personage"
+                                                        name="personage">
+                                                        <option value="" selected="">-- Select One --</option>
+                                                        <option value="18">18 Year</option>
+                                                        <option value="19">19 Year</option>
+                                                        <option value="20">20 Year</option>
+                                                        <option value="21">21 Year</option>
+                                                        <option value="22">22 Year</option>
+                                                        <option value="23">23 Year</option>
+                                                        <option value="24">24 Year</option>
+                                                        <option value="25">25 Year</option>
+                                                        <option value="26">26 Year</option>
+                                                        <option value="27">27 Year</option>
+                                                        <option value="28">28 Year</option>
+                                                        <option value="29">29 Year</option>
+                                                        <option value="30">30 Year</option>
+                                                        <option value="31">31 Year</option>
+                                                        <option value="32">32 Year</option>
+                                                        <option value="33">33 Year</option>
+                                                        <option value="34">34 Year</option>
+                                                        <option value="35">35 Year</option>
+                                                        <option value="36">36 Year</option>
+                                                        <option value="37">37 Year</option>
+                                                        <option value="38">38 Year</option>
+                                                        <option value="39">39 Year</option>
+                                                        <option value="40">40 Year</option>
+                                                        <option value="41">41 Year</option>
+                                                        <option value="42">42 Year</option>
+                                                        <option value="43">43 Year</option>
+                                                        <option value="44">44 Year</option>
+                                                        <option value="45">45 Year</option>
+                                                        <option value="46">46 Year</option>
+                                                        <option value="47">47 Year</option>
+                                                        <option value="48">48 Year</option>
+                                                        <option value="49">49 Year</option>
+                                                        <option value="50">50 Year</option>
+                                                        <option value="51">51 Year</option>
+                                                        <option value="52">52 Year</option>
+                                                        <option value="53">53 Year</option>
+                                                        <option value="54">54 Year</option>
+                                                        <option value="55">55 Year</option>
+                                                        <option value="56">56 Year</option>
+                                                        <option value="57">57 Year</option>
+                                                        <option value="58">58 Year</option>
+                                                        <option value="59">59 Year</option>
+                                                        <option value="60">60 Year</option>
+                                                    </select>
+                                                    <span class="control-label" id="personage_error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="number_block mb-3">
+                                            <div class="number_block_one">
+                                                <div class="form-outline">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label form_label9">RELIGION</label>
+                                                    <select class="form-select custom_select_box"
+                                                        aria-label="Default select example" id="religion_id"
+                                                        name="religion_id">
+                                                        <option value="" selected="">Choose one</option>
+                                                        <option value="Judaism"> Judaism</option>
+                                                        <option value="Cristianity"> Cristianity</option>
+                                                        <option value="Hinduism"> Hinduism</option>
+                                                        <option value="Buddhism"> Buddhism</option>
+                                                        <option value="Atheism"> Atheism</option>
+                                                        <option value="Islam"> Islam</option>
+                                                        <option value="Sikhism"> Sikhism</option>
+                                                        <option value="Jain"> Jain</option>
+                                                    </select>
+                                                    <span class="control-label" id="religion_id_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="number_block_two">
+                                                <div class="form-outline">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label form_label9">CASTE / SECT</label>
+                                                    <select class="form-select custom_select_box"
+                                                        aria-label="Default select example" id="caste_id"
+                                                        name="caste_id">
+                                                        <option value="" selected="">Choose one</option>
+                                                        <option value="Brahman"> Brahman</option>
+                                                        <option value="Cristianity"> Bhumihar</option>
+                                                        <option value="Hinduism"> Rajpoot</option>
+                                                    </select>
+                                                    <span class="control-label" id="caste_id_error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="number_block mb-3">
+                                            <div class="number_block_two">
+                                                <div class="form-outline">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label form_label9">SUB CASTE</label>
+                                                    <select class="form-select custom_select_box"
+                                                        aria-label="Default select example" id="sub_caste_id"
+                                                        name="sub_caste_id">
+                                                        <option value="" selected="">Choose one</option>
+                                                        <option value="Brahman"> Brahman</option>
+                                                        <option value="Cristianity"> Bhumihar</option>
+                                                        <option value="Hinduism"> Rajpoot</option>
+                                                    </select>
+                                                    <span class="control-label" id="sub_caste_id_error"></span>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="unique_select mb-3"> -->
+                                            <div class="number_block_two">
+                                                <label for="exampleInputPassword1" class="form-label form_label9">MOTHER
+                                                    TOUNGE</label>
+                                                <select class="form-select custom_select_box"
+                                                    aria-label="Default select example" id="mothertounge"
+                                                    name="mothertounge">
+                                                    <option value="" selected="">Choose one</option>
+                                                    <option value="Bengali"> Bengali</option>
+                                                    <option value="Manipuri"> Manipuri</option>
+                                                    <option value="English"> English</option>
+                                                    <option value="Hindi"> Hindi</option>
+                                                    <option value="Urdu"> Urdu</option>
+                                                    <option value="Assamese"> Assamese</option>
+                                                    <option value="Boro"> Boro</option>
+                                                    <option value="Mising"> Mising</option>
+                                                    <option value="Rajbongshi"> Rajbongshi</option>
+                                                    <option value="Rabha"> Rabha</option>
+                                                    <option value="Dimasa"> Dimasa</option>
+                                                    <option value="Tai Ahom"> Tai Ahom</option>
+                                                    <option value="Karbi"> Karbi</option>
+                                                    <option value="Khasia"> Khasia</option>
+                                                    <option value="Hmar"> Hmar</option>
+                                                    <option value="Deori"> Deori</option>
+                                                    <option value="Oriya"> Oriya</option>
+                                                    <option value="Garo"> Garo</option>
+                                                    <option value="Khasia"> Khasia</option>
+                                                </select>
+                                                <span class="control-label" id="mothertounge_error"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="number_block mb-3">
+                                            <div class="number_block_one">
+                                                <div class="form-outline">
+                                                    <label class="form-label form_label9" for="typeNumber">HEIGHT
+                                                        (FEET)</label>
+                                                    <input type="text" class="form-control custom_select_box"
+                                                        placeholder="0.00" id="height" name="height" value="">
+                                                    <span class="control-label" id="height_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="number_block_two">
+                                                <div class="form-outline">
+                                                    <label class="form-label form_label9"
+                                                        for="typeNumber">Location</label>
+                                                    <input type="text" class="form-control custom_select_box"
+                                                        placeholder="Ex. Kolkata, Delhi" id="location" name="location"
+                                                        value="">
+                                                    <span class="control-label" id="location_error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="number_block mb-3">
+                                            <div class="number_block_one">
+                                                <div class="form-outline">
+                                                    <label class="form-label form_label9" for="typeemail">Email</label>
+                                                    <input type="email" class="form-control custom_select_box"
+                                                        placeholder="example@example.com" id="emailaddress"
+                                                        name="emailaddress" value="">
+                                                    <span class="control-label" id="emailaddress_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="number_block_two">
+                                                <div class="form-outline">
+                                                    <label class="form-label form_label9" for="password">Password
+                                                    </label>
+                                                    <input type="password" class="form-control custom_select_box"
+                                                        minlength="8" maxlength="12" id="password" name="password"
+                                                        value="" required>
+                                                    <span class="control-label" id="mobileno_error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="button_block">
+                                            <button type="submit" class="btn submit_button" name="submit">SIGN
+                                                UP</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="juarny_with_us position-relative section-two">
+        <div class="container">
+            <div class="juarny_with_us_inner">
+                <div class="common_heading text-center">
+                    <h4>Meet New People Today!</h4>
+                    <h2>New Members in Assam</h2>
+                    <div class="common_pic">
+                        <img src="assets/image/commom-pic.png" class="img-fluid">
+                    </div>
+                </div>
+
+                <div id="main-slider9" class="owl-carousel owl-theme">
+
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p1.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p4.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p2.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p5.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p3.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p6.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p1.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p4.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p2.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p5.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p3.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+                    <div class="box">
+                        <div class="item  item9">
+                            <img src="assets/image/p6.jpg" class="img-fluid">
+                        </div>
+                        <h5>Tanjina</h5>
+                        <p>19 yr</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="juarny_with_us position-relative">
+        <div class="container">
+            <div class="juarny_with_us_inner">
+                <div class="common_heading text-center">
+                    <h2>Let's start your journey with us</h2>
+                    <div class="common_pic">
+                        <img src="assets/image/commom-pic.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="juarny_with_us_inner_grid">
+
+
+                    <div class="grid_block_holder">
+                        <div class="jwuig_one jwuig_one1 position-relative">
+
+                            <div class="common_icon_inner">
+                                <div class="common_icon flex_center">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                            </div>
+
+                            <div class="jwuig_one_text_block text-center">
+                                <h3>Build Your Profile</h3>
+                                <p>A detailed & accurate profile gets right matches</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="grid_block_holder">
+                        <div class="jwuig_one jwuig_two position-relative">
+
+                            <div class="common_icon_inner">
+                                <div class="common_icon common_icon2 flex_center">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                            </div>
+
+                            <div class="jwuig_one_text_block text-center">
+                                <h3>Activate Your Profile</h3>
+                                <p>A Photo ID matched profile gets more responses</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="grid_block_holder">
+                        <div class="jwuig_one jwuig_three position-relative">
+
+                            <div class="common_icon_inner">
+                                <div class="common_icon common_icon3 flex_center">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                            </div>
+
+                            <div class="jwuig_one_text_block text-center">
+                                <h3>Build Your Profile</h3>
+                                <p>A detailed & accurate profile gets right matches</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="grid_block_holder">
+                        <div class="jwuig_one jwuig_four position-relative">
+
+                            <div class="common_icon_inner">
+                                <div class="common_icon common_icon4 flex_center">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                            </div>
+
+                            <div class="jwuig_one_text_block text-center">
+                                <h3>Build Your Profile</h3>
+                                <p>A detailed & accurate profile gets right matches</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-relative section-four">
+        <div class="four">
+            <div class="container">
+                <div class="juarny_with_us_inner">
+                    <div class="common_heading text-center">
+                        <h2>Happy Stories that started with us</h2>
+                        <div class="common_pic">
+                            <img src="assets/image/commom-pic.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div id="main-slider8" class="owl-carousel owl-theme">
+
+                        <div class="item  item8">
+                            <div class="box">
+                                <div class="sub-box">
+                                    <img src="assets/image/p1.jpg" class="img-fluid">
+                                    <div class="details">
+                                        <h3>Soniya Korio (znmfs890)</h3>
+                                        <h3>Karam Ansh (vcdce786)</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem cumque
+                                            debitis quas dolores dolor rem sapiente in consequatur ipsum modi ut ratione
+                                            dolorem voluptates repellat maiores, fugiat impedit quae qui deleniti earum
+                                            amet delectus atque! Iusto nisi ab magnam debitis sequi illum deserunt,
+                                            ducimus quidem. Reprehenderit dolorem quasi reiciendis?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  item8">
+                            <div class="box">
+                                <div class="sub-box">
+                                    <img src="assets/image/p1.jpg" class="img-fluid">
+                                    <div class="details">
+                                        <h3>Soniya Korio (znmfs890)</h3>
+                                        <h3>Karam Ansh (vcdce786)</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem cumque
+                                            debitis quas dolores dolor rem sapiente in consequatur ipsum modi ut ratione
+                                            dolorem voluptates repellat maiores, fugiat impedit quae qui deleniti earum
+                                            amet delectus atque! Iusto nisi ab magnam debitis sequi illum deserunt,
+                                            ducimus quidem. Reprehenderit dolorem quasi reiciendis?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  item8">
+                            <div class="box">
+                                <div class="sub-box">
+                                    <img src="assets/image/p1.jpg" class="img-fluid">
+                                    <div class="details">
+                                        <h3>Soniya Korio (znmfs890)</h3>
+                                        <h3>Karam Ansh (vcdce786)</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem cumque
+                                            debitis quas dolores dolor rem sapiente in consequatur ipsum modi ut ratione
+                                            dolorem voluptates repellat maiores, fugiat impedit quae qui deleniti earum
+                                            amet delectus atque! Iusto nisi ab magnam debitis sequi illum deserunt,
+                                            ducimus quidem. Reprehenderit dolorem quasi reiciendis?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  item8">
+                            <div class="box">
+                                <div class="sub-box">
+                                    <img src="assets/image/p1.jpg" class="img-fluid">
+                                    <div class="details">
+                                        <h3>Soniya Korio (znmfs890)</h3>
+                                        <h3>Karam Ansh (vcdce786)</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem cumque
+                                            debitis quas dolores dolor rem sapiente in consequatur ipsum modi ut ratione
+                                            dolorem voluptates repellat maiores, fugiat impedit quae qui deleniti earum
+                                            amet delectus atque! Iusto nisi ab magnam debitis sequi illum deserunt,
+                                            ducimus quidem. Reprehenderit dolorem quasi reiciendis?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  item8">
+                            <div class="box">
+                                <div class="sub-box">
+                                    <img src="assets/image/p1.jpg" class="img-fluid">
+                                    <div class="details">
+                                        <h3>Soniya Korio (znmfs890)</h3>
+                                        <h3>Karam Ansh (vcdce786)</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem cumque
+                                            debitis quas dolores dolor rem sapiente in consequatur ipsum modi ut ratione
+                                            dolorem voluptates repellat maiores, fugiat impedit quae qui deleniti earum
+                                            amet delectus atque! Iusto nisi ab magnam debitis sequi illum deserunt,
+                                            ducimus quidem. Reprehenderit dolorem quasi reiciendis?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  item8">
+                            <div class="box">
+                                <div class="sub-box">
+                                    <img src="assets/image/p1.jpg" class="img-fluid">
+                                    <div class="details">
+                                        <h3>Soniya Korio (znmfs890)</h3>
+                                        <h3>Karam Ansh (vcdce786)</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem cumque
+                                            debitis quas dolores dolor rem sapiente in consequatur ipsum modi ut ratione
+                                            dolorem voluptates repellat maiores, fugiat impedit quae qui deleniti earum
+                                            amet delectus atque! Iusto nisi ab magnam debitis sequi illum deserunt,
+                                            ducimus quidem. Reprehenderit dolorem quasi reiciendis?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="juarny_with_us position-relative section-five">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="box">
+                        <h4>Download App Our Assam</h4>
+                        <h2>Easy Connect to Everyone</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vitae suscipit quod harum
+                            maxime repellat saepe, cum obcaecati repudiandae. Quam nam dolor quisquam dolorem
+                            perferendis fugiat, natus dolore praesentium labore quas consequatur nobis assumenda maxime,
+                            ducimus porro facere? Architecto totam hic voluptate? Quasi voluptatem culpa, eaque quod
+                            suscipit assumenda illo.</p>
+                        <a href="javascript:void(0)" style="margin-right: .3rem;"><img src="assets/image/apple.png"
+                                alt=""></a>
+                        <a href="javascript:void(0)"><img src="assets/image/google.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="img">
+                        <img width="500rem" src="assets/image/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer_block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="footer_block_left">
+                        <h1>JIBON SONGI</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos asperiores voluptatum
+                            inventore commodi incidunt non optio saepe, exercitationem molestiae culpa, esse fugiat
+                            ducimus corrupti amet quisquam, sapiente aliquid adipisci omnis!</p>
+                        <div class="icons">
+                            <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="footer_block_right">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>ABOUT</h5>
+                                <ul>
+                                    <li>All Members</li>
+                                    <li>Premium Members</li>
+                                    <li>Free Members</li>
+                                    <li>Happy Stories</li>
+                                    <li>Premium Plans</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>QUICK SEARCH</h5>
+                                <ul>
+                                    <li>All Members</li>
+                                    <li>Premium Members</li>
+                                    <li>Free Members</li>
+                                    <li>Happy Stories</li>
+                                    <li>Premium Plans</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>USEFUL LINKS</h5>
+                                <ul>
+                                    <li>FAQ</li>
+                                    <li>Terms & Conditions</li>
+                                    <li>Privacy Policy</li>
+                                </ul>
+                                <div class="box">
+                                    <h6>Download Our App</h6>
+                                    <a href="javascript:void(0)"><img src="assets/image/apple.png" alt=""></a>
+                                    <a href="javascript:void(0)"><img src="assets/image/google.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="color: #fff;">
+        <div class="container">
+            <div class="text-center">
+                <p style="color: #ffffff; font-weight: 300;">Copyright &copy; 2023 Assam matrimonial - All Rights
+                    Reserved</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="testimonials">
+        <div class="container">
+            <div id="main-slider9" class="owl-carousel owl-theme">
+
+                <div class="item  item9">
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+
+                <div class="item item9">
+
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+
+                <div class="item  item9">
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+
+                <div class="item item9">
+
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+                <div class="item  item9">
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+
+                <div class="item item9">
+
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+                <div class="item  item9">
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+
+                <div class="item item9">
+
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+                <div class="item  item9">
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+
+                <div class="item item9">
+
+                    <img src="assets/image/slider-1.png" class="img-fluid">
+                </div>
+
+
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="top_serach_artistis">
+        <div class="container">
+            <div class="top_flex_heading">
+                <h1>Top Search Artists</h1>
+                <a href="#">See All</a>
+            </div>
+            <div class="top_serach_artistis_inner">
+                <div class="container">
+                    <div id="main-slider10" class="owl-carousel owl-theme">
+
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+                        <div class="item  item10">
+                            <div class="item10_inner position-relative">
+                                <img src="assets/image/profile-1.png" class="img-fluid">
+                                <div class="tick">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="item10_text_block text-center">
+                                <h2>Pritam</h2>
+                                <p>500 Plyed</p>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <script>
+        document.getElementById("homeregistrationForm").addEventListener("submit", async (event) => {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            const formData = new FormData(event.target); // Get the form data
+            const formObject = Object.fromEntries(formData); // Convert form data to an object
+
+            try {
+                const response = await fetch("/userRegister", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formObject), // Send the form data as JSON
+                });
+
+                if (response.ok) {
+                    window.location.href = "/edit_profile"; // 
+                } else {
+                    // Form submission failed
+                    const errorData = await response.json();
+                    console.log(errorData);
+
+                }
+            } catch (error) {
+                console.log(error);
+
+            }
+        });
+
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/my-carousel.js"></script>
+</body>
+
+</html>
